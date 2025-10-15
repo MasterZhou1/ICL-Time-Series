@@ -4,8 +4,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-ICL--Time--Series-181717?logo=github)](https://github.com/MasterZhou1/ICL-Time-Series)
 
 **Authors:**
-[**Yufa Zhou***$^1$](https://masterzhou1.github.io/), [**Yixiao Wang***$^1$](https://yixiao-wang-stats.github.io/),
-[**Surbhi Goel**$^2$](https://www.surbhigoel.com/), [**Anru R. Zhang**$^1$](https://anruzhang.github.io/)
+[**Yufa Zhou*** $^1$](https://masterzhou1.github.io/), [**Yixiao Wang*** $^1$](https://yixiao-wang-stats.github.io/),
+[**Surbhi Goel** $^2$](https://www.surbhigoel.com/), [**Anru R. Zhang** $^1$](https://anruzhang.github.io/)
 
 $^1$**Duke University**, $^2$**University of Pennsylvania**
 
