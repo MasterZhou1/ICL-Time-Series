@@ -14,7 +14,7 @@ $^1$**Duke University**, $^2$**University of Pennsylvania**
 ## Introduction
 
 Despite their widespread success in language and vision, Transformers often underperform simple linear models on time series forecasting (TSF) tasks. While empirical studies have consistently shown this, the underlying theoretical reason remained unclear.
-This work provides a rigorous formal analysis explaining **why** Transformers exhit those limitations through the lens of In-Context Learning (ICL) theory.
+This work provides a rigorous formal analysis explaining **why** Transformers exhibit those limitations through the lens of In-Context Learning (ICL) theory.
 
 ### Theory
 
