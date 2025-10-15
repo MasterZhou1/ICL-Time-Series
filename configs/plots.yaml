@@ -1,0 +1,29 @@
+plots:
+  context_scaling:
+    exclude: []
+    # Examples of how to exclude specific parameter combinations:
+    # exclude:
+    #   - {"history_len": 100}  # Exclude all experiments with history_len=100
+    #   - {"history_len": 100, "p": 3}  # Exclude experiments with history_len=100 AND p=3
+    #   - {"p": 3}  # Exclude all experiments with p=3
+    kind: sem
+    floor_mode: ols_min
+    floor_factor: 0.6
+    ceil_factor: 2.3
+    outliers:
+      enable: false
+      method: mad
+      k: 2
+      min_group_size: 2
+
+  lsa_layers:
+    exclude: []
+    kind: sem
+    floor_mode: ols_min
+    floor_factor: 0.94
+    ceil_factor: 1.4
+    outliers:
+      enable: true
+      method: mad
+      k: 3
+      min_group_size: 2

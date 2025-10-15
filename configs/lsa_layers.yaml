@@ -1,0 +1,29 @@
+# LSA Layers Experiment Configuration
+# Study the effect of number of LSA layers (L) on performance
+
+# Inherit base configuration
+base: "base_config.yaml"
+
+# Experiment-specific parameters
+experiment:
+  name: "lsa_layers"
+  
+  # Seeds to use
+  seeds: [100, 101, 102, 103, 104, 105, 106]
+
+  # AR orders to test (simplified subset for this experiment)
+  p_values: [3, 5, 7]
+  
+  # LSA layers to test
+  lsa_layers: [1, 2, 3, 4, 5]
+  
+  # Fixed history length for this experiment
+  history_len: 100
+
+
+# Output directories (relative to base_dir)
+output:
+  base_dir: "experiments"      # Base directory for all experiments
+  checkpoints_dir: "lsa_layers/checkpoints"  # For trained models
+  plots_dir: "lsa_layers/plots"              # For generated plots
+  results_dir: "lsa_layers/results"          # For evaluation results 

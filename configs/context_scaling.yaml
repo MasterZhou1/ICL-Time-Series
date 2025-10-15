@@ -1,0 +1,29 @@
+# Context Scaling Experiment Configuration
+# Study the effect of history length (n) on LSA performance vs OLS
+
+# Inherit base configuration
+base: "base_config.yaml"
+
+# Experiment-specific parameters
+experiment:
+  name: "context_scaling"
+
+  # Seeds to use
+  seeds: [100, 101, 102, 103, 104, 105, 106]
+
+  # AR orders to test
+  p_values: [3, 5, 7]
+  
+  # History length offsets (n = p + offset)
+  history_len_offsets: [5, 25, 50, 100, 200]
+  
+  # Fixed LSA layers for this experiment
+  lsa_layers: 1
+  
+
+# Output directories (relative to base_dir)
+output:
+  base_dir: "experiments"      # Base directory for all experiments
+  checkpoints_dir: "context_scaling/checkpoints"  # For trained models
+  plots_dir: "context_scaling/plots"              # For generated plots
+  results_dir: "context_scaling/results"          # For evaluation results 

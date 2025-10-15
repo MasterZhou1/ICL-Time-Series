@@ -1,0 +1,1 @@
+"""Configuration package for ICL Time Series Forecasting."""

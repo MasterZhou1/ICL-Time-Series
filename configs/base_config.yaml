@@ -1,0 +1,33 @@
+# Base configuration for ICL Time Series experiments
+# This file contains common parameters used across all experiments
+
+# Data generation settings
+data:
+  sigma: 0.05                    # Noise standard deviation
+  series_len: 50000            # Total length of AR series
+  train_split: 0.8             # Fraction for training
+  val_split: 0.1              # Fraction for validation
+
+# Training hyperparameters
+training:
+  epochs: 100                  # Maximum training epochs
+  batch_size: 512              # Training batch size
+  learning_rate: 1e-3          # Optimizer learning rate
+  patience: 8                 # Early stopping patience
+
+# Evaluation settings
+evaluation:
+  cot_steps: 100               # Chain-of-thought evaluation steps
+  eval_batch_size: 512         # Evaluation batch size
+
+# Output directories
+output:
+  base_dir: "experiments"      # Base directory for all experiments
+  checkpoints_dir: "checkpoints"  # Model checkpoints
+  plots_dir: "plots"           # Generated plots
+  results_dir: "results"       # CSV results and analysis
+
+# Parallel execution
+parallel:
+  default_workers: 8           # Default number of parallel workers
+  max_workers: 20              # Maximum allowed workers 
